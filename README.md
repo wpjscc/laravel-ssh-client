@@ -43,6 +43,13 @@ Laravel-ssh-client 有两个小瑕疵
 * 集成在 laravel-websocket 内
 * 支持密码和 ssh-key 登录
 
+## 注意
+
+* 连接成功后会隐藏登录框，请确定密码和ssh key 是否正确
+* 使用docker时，注意是运行在docker容器中的，其他内网ip容器访问不到,可以用外网ip或宿主主机ip调试
+  * mac 可以用 docker.for.mac.host.internal 做为宿主主机IP
+  * linux 找到 ifconfig | grep docker 获取ip
+
 ## 效果预览
 
 ![](/public/image/login.png)
