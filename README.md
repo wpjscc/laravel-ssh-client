@@ -3,6 +3,7 @@
 * [github](https://github.com/wpjscc/laravel-ssh-client)
 ## 启动
 ```
+git clone https://gitee.com/wpjscc/laravel-ssh-client
 composer install
 cp .env.example .env
 php artisan serve --port=8088
