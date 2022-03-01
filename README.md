@@ -1,7 +1,9 @@
 
 * [gitee](https://gitee.com/wpjscc/laravel-ssh-client)
 * [github](https://github.com/wpjscc/laravel-ssh-client)
+
 ## 快速开始
+
 ```
 git clone https://gitee.com/wpjscc/laravel-ssh-client
 composer install
@@ -58,8 +60,8 @@ docker push -t yourdomain.com/yourusername/laravel-ssh-client
 你可能发现了只是加了个域名前缀
 
 如果你想自定义php镜像,比如在docker/Dockerfile中的`wpjscc/php:7.4.7-fpm-alpine` 想换成自己的，可以看这个仓库
-[gitee docker-php](https://github.com/wpjscc/docker-php)
-[github docker-php](https://gitee.com/wpjscc/docker-php)
+[gitee docker-php](https://gitee.com/wpjscc/docker-php)
+[github docker-php](https://github.com/wpjscc/docker-php)
 
 
 ## 注意
