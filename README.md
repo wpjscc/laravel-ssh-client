@@ -1,7 +1,7 @@
 
 * [gitee](https://gitee.com/wpjscc/laravel-ssh-client)
 * [github](https://github.com/wpjscc/laravel-ssh-client)
-## 启动
+## 快速开始
 ```
 git clone https://gitee.com/wpjscc/laravel-ssh-client
 composer install
@@ -30,9 +30,9 @@ npm run dev
 ```
 
 
+
 ## 其他
 参考的: https://github.com/roke22/Laravel-ssh-client
-
 
 Laravel-ssh-client 有两个小瑕疵
 * 需要安装 ssh2 扩展
@@ -42,6 +42,25 @@ Laravel-ssh-client 有两个小瑕疵
 * 使用 github.com/phpseclib/phpseclib 这个库，建立 ssh 链接
 * 集成在 laravel-websocket 内
 * 支持密码和 ssh-key 登录
+
+如果你想自定义打包docker镜像
+```
+docker login
+docker build -t yourusername/laravel-ssh-client -f docker/Dockerfile
+docker push yourusername/laravel-ssh-client
+```
+如果你想自定义打包私有镜像，比如阿里云,个人可以免费300个私有镜像
+```
+docker login yourdomain.com
+docker build -t yourdomain.com/yourusername/laravel-ssh-client -f docker/Dockerfile
+docker push -t yourdomain.com/yourusername/laravel-ssh-client
+```
+你可能发现了只是加了个域名前缀
+
+如果你想自定义php镜像,比如在docker/Dockerfile中的`wpjscc/php:7.4.7-fpm-alpine` 想换成自己的，可以看这个仓库
+[gitee docker-php](https://github.com/wpjscc/docker-php)
+[github docker-php](https://gitee.com/wpjscc/docker-php)
+
 
 ## 注意
 
