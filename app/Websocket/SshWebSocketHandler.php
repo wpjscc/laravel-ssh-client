@@ -110,7 +110,7 @@ class SshWebSocketHandler implements MessageComponentInterface
     public function connectSSH($idConnection, $server, $port, $user, $password, $from, $type = 1, $certificate = '')
     {
         $this->connection[$from->resourceId] = new SSH2($server, $port);
-
+        $this->connection[$from->resourceId]->setWindowSize(1024, 768);
         if ($this->connection[$from->resourceId] === false) {
             $from->send("Error during connection to ".$server." at port ".$port."\r\n", "UTF-8");
             return false;
